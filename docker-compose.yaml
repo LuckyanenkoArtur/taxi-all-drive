@@ -1,0 +1,42 @@
+version: "3.8"
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+      - ./backend/public/event-preview/:/app/public/event-preview/
+    env_file:
+      - ./backend/config/.env
+    command: nodemon index.js
+    restart: unless-stopped
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: frontend
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: unless-stopped
+  db-postgres:
+    build:
+      context: ./postgres
+      dockerfile: Dockerfile
+    environment:
+      POSTGRES_DB: "taxi_all_drive"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "#15Gjcn3128Uh.#"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    restart: always
+
+volumes:
+  postgres_data:
