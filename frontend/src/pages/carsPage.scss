@@ -1,0 +1,15 @@
+.cars-page-main-window {
+  margin: 0;
+  padding: 0;
+  .cars-page-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .cars-page-main-event-cards-container {
+      padding-top: 2.5%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+  }
+}

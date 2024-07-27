@@ -1,0 +1,20 @@
+.account-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.5%;
+  width: 100%;
+
+  .account-image-section {
+    width: 20%;
+    height: 100%;
+  }
+
+  .account-info-details-section {
+    width: 80%;
+    height: 100%;
+    .account-info-details-section-entries {
+      width: 55%;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.main-page-window {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+
+  .page-header-layout {
+    padding: {
+      top: 1rem;
+      left: 2.7%;
+      right: 2.7%;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .data-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.orders-data-table-manipulation-panel {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: {
+    top: 1%;
+    bottom: 1%;
+    left: 2.5%;
+    right: 2.5%;
+  }
+
+  .manipulation-panel-button {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    .pi {
+      color: black;
+      font-weight: bold;
+    }
+    background: #fdd75e;
+    border: #fdd75e;
+  }
+}

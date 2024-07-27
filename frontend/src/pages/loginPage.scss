@@ -1,0 +1,39 @@
+.login-main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+
+  .login-main-info-part {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+      font-size: 2rem;
+      margin-bottom: 1.8rem;
+      font-weight: bold;
+    }
+
+    .logo-brief-welcome-title {
+      font-size: 1.1rem;
+    }
+
+    .login-form {
+      margin-bottom: 1.8rem;
+      .login-form-entry {
+        .test {
+          margin: 1rem 0;
+        }
+
+        > .p-inputtext,
+        .p-password-input {
+          width: 15rem;
+          height: 2rem;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}

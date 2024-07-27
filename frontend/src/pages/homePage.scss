@@ -1,0 +1,40 @@
+.home-page-main-window {
+  margin: 0;
+  padding: 0;
+
+  .home-page-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .home-page-main-event-cards-container {
+      padding-top: 2.5%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+  }
+}
+
+.app-video-preview-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72rem;
+  padding: {
+    left: 1%;
+    right: 1%;
+  }
+
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.app-preview-description-main {
+  padding: {
+    left: 2.7%;
+    right: 2.7%;
+    top: 1rem;
+  }
+}

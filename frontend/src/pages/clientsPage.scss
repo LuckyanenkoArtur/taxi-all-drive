@@ -1,0 +1,16 @@
+.clients-page-main-window {
+  margin: 0;
+  padding: 0;
+
+  .clients-page-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .clients-page-main-event-cards-container {
+      padding-top: 2.5%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.dialog-main-container {
+  .dialog-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    .dialog-input-title {
+      font-size: 1.15rem;
+      font-weight: bold;
+      color: black;
+    }
+    .diaglog-input {
+    }
+  }
+}

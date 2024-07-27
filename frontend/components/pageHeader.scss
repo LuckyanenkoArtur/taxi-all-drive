@@ -1,0 +1,24 @@
+.logo-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .logo-container {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+}
+
+.avatar-container {
+}
+
+.siderbar-navigation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  .siderbar-buttons {
+    margin-top: 1rem;
+    background: #fdd75e;
+    color: #000000;
+    border: #fdd75e;
+  }
+}

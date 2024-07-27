@@ -1,0 +1,16 @@
+.user-profile-actions {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 1rem 2.5%;
+
+  .manipulation-account-buttons {
+    margin: 0 0.2rem;
+    background: #fdd75e;
+    border: #fdd75e;
+    .p-button-icon {
+      color: #000000;
+      font-weight: bold;
+    }
+  }
+}
